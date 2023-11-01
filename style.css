@@ -1,0 +1,93 @@
+@import url(adapt.css);
+@import url(header.css);
+@import url(main.css);
+@import url(footer.css);
+@import url(burger_menu.css);
+
+@font-face {
+    font-family: 'Poppins-regular'; 
+    src: url('font/Poppins-Regular.ttf') format('truetype');
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'Poppins-medium'; 
+    src: url('font/Poppins-Medium.ttf') format('truetype');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Poppins-bold'; 
+    src: url('font/Poppins-Bold.ttf') format('truetype');
+    font-weight: 800;
+}
+body{
+    margin: 0;
+    display: flex;
+}
+body *{
+    font-size: 16px;
+    font-family: 'Poppins-medium';
+    color: #29180fb8;
+}
+
+body .wrapper{
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: clip;
+}
+[class*="_container"]{
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+h1{
+    color: #190c05cb;
+    font-family: 'Poppins-bold';
+    margin: 0;
+}
+p{
+    margin: 0;
+    font-family: 'Poppins-regular';
+    font-size: 18px;
+    line-height: 150%;
+    padding-right: 70px;
+}
+.button{
+    border: 0;
+    max-width: 121px;
+    border-radius: 10px;
+    padding: 15px 30px;
+    transition: opacity 0.2s ease-in-out;
+}
+.orange_button{
+    background: linear-gradient(to bottom,#F6762C, #C65311);
+    color: white;
+    
+}
+.orange_button:hover{
+    opacity: calc(0.7);
+    cursor: pointer;
+}
+.orange_span{
+    letter-spacing: 1.105px;
+    color:#F6762C;
+}
+.text_left, .text_right{
+    display: flex;
+    flex-direction: column;
+    padding: 186px 17px;
+    align-items: flex-start;
+}
+.text_left .button, .text_right .button{
+    margin-top: 45px;
+}
+.image_right, .image_left{
+    display: flex;
+    align-self: center;
+}
+
+.text_center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

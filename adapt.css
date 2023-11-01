@@ -1,0 +1,142 @@
+@media  (max-width: 580px) {
+    /* Additional specific styles for mobile devices */
+    header section.hat_container{
+        column-gap: 10px !important;
+        justify-content:flex-start !important;
+    }
+
+    .hat_container .authorisation{
+        flex-direction: row !important;
+        column-gap: 10px !important;
+    }
+    .hat_container .authorisation .button{
+        padding: 10px;
+    }
+    .hat_container .menu-container ul.desktop_menu{
+      display: none;
+    }
+    .food_delivery {
+      flex-direction: column;
+    }
+    .food_delivery .image_right img {
+      max-width: 100%;
+      height: auto;
+    }
+    footer .footer_container {
+        grid-template-columns: 1fr !important;
+    }
+    footer .footer_container div{
+        align-items: center;
+    }
+    footer .footer_container .logo img{
+        padding: 0 !important;
+    }
+    footer .footer_container .logo p{
+        text-align: center;
+    }
+    footer .footer_container .menu span, footer .footer_container .links span{
+        display: none;
+    }
+  }
+  @media (max-width: 766px) {
+
+    header .food_delivery{
+        flex-direction: column;
+        align-items: center;
+    }
+    header .food_delivery .text_left{
+        align-items: center;
+        padding: 0;
+        max-width: 100%;
+    }
+    header .food_delivery .text_left p{
+        text-align: center;
+        padding: 0;
+    }
+    header .food_delivery .image_right{
+        margin-top: 20px;
+    }
+    header .food_delivery .image_right img{
+        max-width: 100%;
+    }
+    
+    h1{
+        text-align: center;
+    }
+    .orange_span{
+        align-self: center;
+        font-size: larger;
+    }
+    section{
+        margin-bottom: 20px !important;
+    }
+    main section{
+        flex-direction: column;
+        align-items: center;
+    }
+    main .text_left, main .text_right, main .about_us .text_right{
+        padding: 10px;
+        text-align: center;
+        align-items: center;
+        margin: 20px auto;
+        max-width: 100% !important;
+    }
+    main .text_left p, main .text_right p{
+        padding: 0;
+    }
+    main .download .text_left .download_panel {
+        column-gap: 20px;
+        justify-content: center;
+    }
+    main .download .image_right img{
+        max-width: 100%;
+    }
+    main .features .services_list{
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+    }
+    body footer .footer_container {
+        grid-template-columns: 1fr 1fr;
+        .menu, .links {
+            order: 4;
+        }
+        gap: 20px;
+
+    }
+  }
+  @media (max-width: 1080px) {
+    /* Additional specific styles for tablets and smaller desktops */
+    header section.hat_container{
+        column-gap: 20px;
+    }
+    .hat_container .menu-container ul.desktop_menu{
+        column-gap: 20px;
+    }
+    .hat_container .authorisation{
+        flex-direction: column-reverse;
+        row-gap: 10px;
+    }
+    .food_delivery h1 {
+        font-size: 30px;
+    }
+    .food_delivery p {
+        font-size: 16px;
+    }
+    main .recipes h1{
+        margin-bottom: 20px;
+    }
+    main .recipes .meals_list{
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+        margin:auto;
+    }
+    main .recipes .meals_list .meals_item .polygon{
+        display: none;
+    }
+    main .recipes .meals_list .meals_item{
+        background-color: hsla(22, 92%, 57%, 0.037);
+        border: hsla(22, 92%, 57%, 0.247) solid 2px;
+        border-radius: 10%;
+    }
+  }
+ 

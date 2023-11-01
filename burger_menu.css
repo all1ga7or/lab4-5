@@ -1,0 +1,80 @@
+/* Стиль бургер-іконки */
+.burger-icon {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 2;
+  }
+  #toggle-menu{
+    display: none;
+  }
+  .bar {
+    width: 25px;
+    height: 3px;
+    background: #000;
+    margin: 4px 0;
+    transition: 0.4s;
+  }
+  
+  /* Змінюємо бургер-іконку на стрілку вгору при активації */
+  .toggle-menu:checked + .burger-icon .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-11px, 10px);
+  }
+  
+  .toggle-menu:checked + .burger-icon .bar:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .toggle-menu:checked + .burger-icon .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -4px);
+  }
+  
+  /* Стиль кнопки "cross" для відкриття/закриття меню */
+  
+  /* Відображаємо мобільне меню при активації "toggle-menu" */
+  .toggle-menu:checked + .burger-icon  + .mobile-menu ul{
+    display: block;
+    background-color: #ffe6d9d7;
+    color: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Стиль навігаційних посилань у мобільному меню */
+  .mobile-menu ul {
+    list-style: none;
+    display: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .mobile-menu ul li {
+    margin: 15px 0;
+  }
+  
+  .mobile-menu ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #000;
+  }
+  
+  .mobile-menu ul li a:hover {
+    color: #F6762C;
+  }
+  
+  /* Медіа-запит для ховання мобільного меню на великих екранах */
+  @media (min-width: 580px) {
+    .toggle-menu {
+      display: none;
+    }
+    .burger-icon {
+      display: none;
+    }
+  }
+  

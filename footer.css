@@ -1,0 +1,67 @@
+footer{
+    margin-top: 110px;
+    background-color: #FFE6D9;
+}
+footer p, footer span{
+    font-family: 'Poppins-regular';
+    font-size: 16px;
+    color: #190c0591;
+}
+footer .footer_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 78px auto;
+}
+.footer_container div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 20px;
+}
+.footer_container .logo{
+    display: flex;
+    row-gap: 0;
+}
+.footer_container .logo p{
+    padding: 0;
+    margin-top: 5px;
+    margin-bottom: 40px;
+    max-width: 100%;
+}
+.footer_container .logo img[src="jpg/logo.png"]{
+    max-width: 116px;
+    padding-right: 134px;
+}
+.footer_container .logo img[src="jpg/socnet.png"]{
+    width: 70%;
+}
+.footer_container a{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.footer_container .email span.form form{
+    position: relative;
+}
+.footer_container .email span.form form input{
+    max-width: 100%;
+    color: #00000055;
+    padding: 13px 23px;
+    border: none;
+    border-radius: 10px;
+}
+.footer_container .email form button{
+    position: absolute;
+    right: 1px; 
+    top: -2px;
+    border-radius: 50%;
+    border: none;
+    scale: 0.5;
+}
+
+.footer_container .email span img[src="jpg/phone.png"], .footer_container .email span img[src="jpg/message.png"]{
+    max-width: 14px;
+    margin-right: 11px; 
+}
+.footer_container .email form button img[src="jpg/button.png"]{
+    padding: 10px 6px 6px 10px;
+}
